@@ -1,0 +1,209 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.contacts__link_map:before {
+  background-image: url(../img/sprite.png);
+  background-position: -524px -81px;
+  width: 12px;
+  height: 16px;
+}
+.contacts__link_telephone:before {
+  background-image: url(../img/sprite.png);
+  background-position: -524px -167px;
+  width: 12px;
+  height: 16px;
+}
+.pages-nav__item_left:before {
+  background-image: url(../img/sprite.png);
+  background-position: -356px -322px;
+  width: 6px;
+  height: 9px;
+}
+.pages-nav__item_right:before {
+  background-image: url(../img/sprite.png);
+  background-position: -524px -416px;
+  width: 6px;
+  height: 9px;
+}
+.product-rating__star {
+  background-image: url(../img/sprite.png);
+  background-position: -344px -411px;
+  width: 16px;
+  height: 15px;
+}
+.product-rating__star_active {
+  background-image: url(../img/sprite.png);
+  background-position: -430px -411px;
+  width: 16px;
+  height: 15px;
+}
+.select2-selection__arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -524px -253px;
+  width: 13px;
+  height: 9px;
+}
+.sidebar-list-title:before {
+  background-image: url(../img/sprite.png);
+  background-position: -524px 0px;
+  width: 18px;
+  height: 11px;
+}
+.sidebar-list__input:checked + .sidebar-list__label_box:before {
+  background-image: url(../img/sprite.png);
+  background-position: -435px -89px;
+  width: 19px;
+  height: 19px;
+}
+.sidebar-list__input:checked + .sidebar-list__label_radio:before {
+  background-image: url(../img/sprite.png);
+  background-position: -435px 0px;
+  width: 19px;
+  height: 19px;
+}
+.sidebar-list__label_box:before {
+  background-image: url(../img/sprite.png);
+  background-position: -267px -322px;
+  width: 19px;
+  height: 19px;
+}
+.sidebar-list__label_box:hover:before {
+  background-image: url(../img/sprite.png);
+  background-position: -178px -322px;
+  width: 19px;
+  height: 19px;
+}
+.sidebar-list__label_radio:before {
+  background-image: url(../img/sprite.png);
+  background-position: -89px -322px;
+  width: 19px;
+  height: 19px;
+}
+.sidebar-list__label_radio:hover:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -322px;
+  width: 19px;
+  height: 19px;
+}
+.socials__link_fb-footer:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 43px;
+  height: 43px;
+}
+.socials__link_fb-footer {
+  background-image: url(../img/sprite.png);
+  background-position: -226px -113px;
+  width: 43px;
+  height: 43px;
+}
+.socials__link_fb-header:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -194px -226px;
+  width: 26px;
+  height: 26px;
+}
+.socials__link_fb-header {
+  background-image: url(../img/sprite.png);
+  background-position: -339px -96px;
+  width: 26px;
+  height: 26px;
+}
+.socials__link_tw-footer:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -226px 0px;
+  width: 43px;
+  height: 43px;
+}
+.socials__link_tw-footer {
+  background-image: url(../img/sprite.png);
+  background-position: -113px -113px;
+  width: 43px;
+  height: 43px;
+}
+.socials__link_tw-header:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -339px -192px;
+  width: 26px;
+  height: 26px;
+}
+.socials__link_tw-header {
+  background-image: url(../img/sprite.png);
+  background-position: -339px 0px;
+  width: 26px;
+  height: 26px;
+}
+.socials__link_vk-footer:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -113px;
+  width: 43px;
+  height: 43px;
+}
+.socials__link_vk-footer {
+  background-image: url(../img/sprite.png);
+  background-position: -113px 0px;
+  width: 43px;
+  height: 43px;
+}
+.socials__link_vk-header:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -97px -226px;
+  width: 27px;
+  height: 26px;
+}
+.socials__link_vk-header {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -226px;
+  width: 27px;
+  height: 26px;
+}
+.sort__link_list:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -172px -411px;
+  width: 16px;
+  height: 16px;
+}
+.sort__link_list {
+  background-image: url(../img/sprite.png);
+  background-position: -86px -411px;
+  width: 16px;
+  height: 16px;
+}
+.sort__link_pic:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -435px -178px;
+  width: 16px;
+  height: 16px;
+}
+.sort__link_pic {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -411px;
+  width: 16px;
+  height: 16px;
+}
+.sort__link_table:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -258px -411px;
+  width: 16px;
+  height: 16px;
+}
+.sort__link_table {
+  background-image: url(../img/sprite.png);
+  background-position: -435px -264px;
+  width: 16px;
+  height: 16px;
+}
+.ui-slider-handle {
+  background-image: url(../img/sprite.png);
+  background-position: -524px -332px;
+  width: 8px;
+  height: 14px;
+}

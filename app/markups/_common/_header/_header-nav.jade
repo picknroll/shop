@@ -1,0 +1,8 @@
+//Навигация в хедере
+.header-nav
+    nav.navigate
+        - var navText = ['Планшеты', 'Мобильные телефоны', 'Мр3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
+        ul.navigate__list
+            each text, index in navText
+                li.navigate__item
+                    a(href="#" class="navigate__link" + ((index == 1) ? " navigate__link_active" : '') title="#{text}") #{text}
