@@ -1,0 +1,57 @@
+//Сайдбар
+aside.sidebar
+    //Класс телефона
+    - var classes = ['Флагманы', 'Бюджетная линейка']
+    ul.phone-classes-list
+        each phoneClass, index in classes
+            li(class="phone-classes-list__item")
+                a(href="#" class="phone-classes-list__link" + ((index == 1) ? " phone-classes-list__link_active" : '')) #{phoneClass}
+    //Аккордеон
+    ul.accordion-list
+        //Наличие
+        li.accordion-list__item
+            a(href="#" class="sidebar-list-title") Наличие в магазинах
+            - var shops = {'all-shops': 'Во всех магазинах','local-shops': 'В ближайшем ко мне магазине'}
+            ul.sidebar-list
+                each value, key in shops
+                    li.sidebar-list__item
+                        input(checked type="radio" name="shop" id="input-#{key}" class="sidebar-list__input")
+                        label(for="input-#{key}" class="sidebar-list__label sidebar-list__label_radio") #{value}
+        //Бренды
+        li.accordion-list__item
+            a(href="#" class="sidebar-list-title") Бренды
+            - var brends = {'lenovo': 'Lenovo', 'apple': 'Apple', 'samsung': 'Samsung', 'asus': 'Asus', 'motorola': 'Motorola'}
+            ul.sidebar-list
+                each brend, key in brends
+                    li.sidebar-list__item
+                        input(type="checkbox" name="#{key}" id="input-#{key}" class="sidebar-list__input")
+                        label(for="input-#{key}" class="sidebar-list__label sidebar-list__label_upper sidebar-list__label_box") #{brend}
+            a(href="#" class="clear-filter") Сбросить фильтр
+        //Цена
+        li.accordion-list__item
+            a(href="#" class="sidebar-list-title") Цена
+            - var prise = {'from': 'от', 'to': 'до'}
+            ul.sidebar-list
+                li.sidebar-list__item
+                    each text, key in prise
+                        label(for="input-#{key}" class="sidebar-list__label sidebar-list__label_text sidebar-list__label_#{key}") #{text}
+                        input(type="text" name="#{key}" id="input-#{key}" class="sidebar-list__input-text sidebar-list__input-text_#{key}")
+                li.sidebar-list__item
+                    .prise-slider(data-min="100" data-max="35000")
+        //Цвет
+        li.accordion-list__item(class="accordion-list__item_color")
+            a(href="#" class="sidebar-list-title") Цвет
+            - var colors = ['white', 'gray', 'black', 'darkblue', 'red', 'yellow', 'orange', 'green', 'blue', 'violet', 'pink', 'brown']
+            ul.sidebar-list
+                each color, index in colors
+                    li.sidebar-list__item(class="sidebar-list__item-color sidebar-list__item-color_#{color}" + ((index == 1) ? " sidebar-list__item-color_active" : ''))
+        //Операционные система
+        li.accordion-list__item
+            a(href="#" class="sidebar-list-title") Операционные системы
+            - var systems = {'android': 'Android', 'ios': 'iOS', 'windows': 'Windows Phone', 'symbian': 'Symbian', 'custom': 'Custom'}
+            ul.sidebar-list
+                each system, key in systems
+                    li.sidebar-list__item
+                        input(type="checkbox" name="#{key}" id="input-#{key}" class="sidebar-list__input")
+                        label(for="input-#{key}" class="sidebar-list__label sidebar-list__label_box") #{system}
+            a(href="#" class="clear-filter") Сбросить фильтр

@@ -1,0 +1,25 @@
+.info{
+  margin-bottom: 9px;
+}
+.info__title{
+  font-size: 20px;
+  font-family: $font-bold;
+  margin: 26px 0 18px;
+  font-weight: normal;
+}
+.info__wrapper{
+  p{
+    text-indent: 37px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  @include clearfix;
+  .first{
+    padding-right: 18px;
+    box-sizing: border-box;
+  }
+  .last{
+    padding-left: 21px;
+    box-sizing: border-box;
+  }
+}
